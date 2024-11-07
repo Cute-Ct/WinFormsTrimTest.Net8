@@ -35,3 +35,7 @@ in .csproj
   	<RuntimeHostConfigurationOption Include="System.Windows.Forms.PictureBox.UseWebRequest" Value="false" Trim="true" />
   </ItemGroup>
 ```
+
+## 5. Manually delete WPF dll files: 22M
+
+D3DCompiler_47_cor3.dll, PenImc_cor3.dll, PresentationNative_cor3.dll, vcruntime140_cor3.dll, wpfgfx_cor3.dll
