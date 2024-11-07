@@ -1,6 +1,6 @@
 # WinForms publish size
 
-
+https://github.com/dotnet/winforms/issues/9911
 
 ## 1. default: 160M
 default settings.
