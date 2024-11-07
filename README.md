@@ -12,3 +12,14 @@ default settings.
 	<_SuppressWinFormsTrimError>true</_SuppressWinFormsTrimError>
 ```
 Manually delete .pdb file
+
+## 3. RemoveWPFReference: 33M
+
+add to .csproj
+```csproj
+  <Target Name="RemoveWPFReference" BeforeTargets="WriteIlcRspFileForCompilation">
+  	<ItemGroup>
+  		<IlcReference Remove="@(IlcReference)" Condition="'%(Filename)' == 'PresentationFramework'" />
+  	</ItemGroup>
+  </Target>
+```  

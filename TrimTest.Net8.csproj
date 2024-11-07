@@ -12,4 +12,9 @@
     <DebugType>none</DebugType>
   </PropertyGroup>
 
+  <Target Name="RemoveWPFReference" BeforeTargets="WriteIlcRspFileForCompilation">
+  	<ItemGroup>
+  		<IlcReference Remove="@(IlcReference)" Condition="'%(Filename)' == 'PresentationFramework'" />
+  	</ItemGroup>
+  </Target>
 </Project>
