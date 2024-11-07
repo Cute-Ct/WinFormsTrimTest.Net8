@@ -39,3 +39,7 @@ in .csproj
 ## 5. Manually delete WPF dll files: 22M
 
 D3DCompiler_47_cor3.dll, PenImc_cor3.dll, PresentationNative_cor3.dll, vcruntime140_cor3.dll, wpfgfx_cor3.dll
+
+## Last: ReadyToRun
+
+File size not changed much.
