@@ -23,3 +23,15 @@ add to .csproj
   	</ItemGroup>
   </Target>
 ```  
+
+## 4. Remove network: 30M
+in .csproj
+```csproj
+  <PropertyGroup>
+  	<XmlResolverIsNetworkingEnabledByDefault>false</XmlResolverIsNetworkingEnabledByDefault>
+  </PropertyGroup>
+  <ItemGroup>
+  	<!-- We really should introduce a first class property for this -->
+  	<RuntimeHostConfigurationOption Include="System.Windows.Forms.PictureBox.UseWebRequest" Value="false" Trim="true" />
+  </ItemGroup>
+```
